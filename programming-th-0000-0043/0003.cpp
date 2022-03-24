@@ -6,16 +6,23 @@ main() {
     cin.tie(0);
     cout.tie(0);
     
-    string s;
-    cin >> s;
+    int n, m;
+    cin >> n >> m;
 
-    bool isup = false, isdown = false;
-    for(auto c : s) {
-        isup = (isup || isupper(c));
-        isdown = (isdown || islower(c));
-    }
+    int A[n][m], B[n][m];
+
+    for(int i=0; i<n; i++)
+        for(int j=0; j<m; j++)
+            cin >> A[i][j];
     
-    if(isup && isdown) cout << "Mix";
-    else if(isup) cout << "All Capital Letter";
-    else cout << "All Small Letter";
+    for(int i=0; i<n; i++)
+        for(int j=0; j<m; j++)
+            cin >> B[i][j];
+
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<m; j++) {
+            cout << A[i][j] + B[i][j] << " ";
+        }
+        cout << "\n";
+    }
 }
