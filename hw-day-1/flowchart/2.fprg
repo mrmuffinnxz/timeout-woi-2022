@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrmuf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-25 09:51:25 PM"/>
+        <attribute name="created" value="bXJtdWY7TEFQVE9QLUYyVUpWNDZBOzIwMjItMDMtMjU7MDk6NDE6MDAgUE07Mjg3MA=="/>
+        <attribute name="edited" value="bXJtdWY7TEFQVE9QLUYyVUpWNDZBOzIwMjItMDMtMjU7MDk6NTE6MjUgUE07MzsyOTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <declare name="type" type="String" array="False" size=""/>
+            <declare name="result" type="Real" array="False" size=""/>
+            <input variable="cost"/>
+            <input variable="type"/>
+            <if expression="type == &quot;A&quot;">
+                <then>
+                    <assign variable="result" expression="cost + (0.08 * cost)"/>
+                </then>
+                <else>
+                    <assign variable="result" expression="cost + (0.15 * cost)"/>
+                </else>
+            </if>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

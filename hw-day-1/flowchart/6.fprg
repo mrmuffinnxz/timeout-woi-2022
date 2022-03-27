@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrmuf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-25 09:57:48 PM"/>
+        <attribute name="created" value="bXJtdWY7TEFQVE9QLUYyVUpWNDZBOzIwMjItMDMtMjU7MDk6NTI6NTYgUE07Mjg4Mw=="/>
+        <attribute name="edited" value="bXJtdWY7TEFQVE9QLUYyVUpWNDZBOzIwMjItMDMtMjU7MDk6NTc6NDggUE07MTsyOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="result" type="Real" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="1"/>
+            <input variable="N"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <input variable="x"/>
+                <assign variable="result" expression="result * x"/>
+            </for>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
