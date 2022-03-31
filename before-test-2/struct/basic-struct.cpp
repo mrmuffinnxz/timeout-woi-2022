@@ -26,4 +26,14 @@ main() {
     s1.name = "Ken";
 
     cout << s1.name << " " << s2.name;
+
+    cout << "---------------\n";
+    struct Student s[100];
+    s[0].name = "John";
+    s[1].name = "Ken";
+    cout << s[0].name << " " << s[1].name << "\n";
+
+    struct Student *p = s;
+    cout << p->name << "\n";
+    cout << (p+1)->name << "\n";
 }
