@@ -10,6 +10,7 @@ int main()
 
     for (In = 0; Al[In] != '\0'; In++) {
         An[Al[In]]++;
+        // printf("%c %d\n", Al[In], int(Al[In]));
     }
     
     for (In = 0; In < 256; In++) {
