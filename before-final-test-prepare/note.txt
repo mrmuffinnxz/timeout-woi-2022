@@ -1,0 +1,6 @@
+Technic
+- Basic Math and Read the Condition (ข้อ 0037 : บินดูไฟ)
+- Basic State Space Search (ข้อ 0019 : Perket)
+- Struct & Sort Struct & Array 2D (ข้อ 0028 : World Cup)
+- Advance Loop (ข้อ 1002 : Roman)
+- Parenting / Union Set (ข้อ 1092 : General)
